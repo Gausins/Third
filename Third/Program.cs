@@ -21,7 +21,6 @@ people.BirthDate = DateTime.Parse(birthDateText);
 people.Name = peoplename;
 people.Surname = peoplesurname;
 people.Hobby = peoplehobby;
-people.BirthDate = birthDateText;
 people.Gender = true;
 
 people.GetAge(birthDateText);
