@@ -8,21 +8,30 @@ namespace Third
 {
     public class Car
     {
-        public string Brand { get; set; }
-        public string NumberPlate { get; set; }
-        public double Speed { get; set; }
+        public string speed;
+
+        public string? Brand { get; set; }
+        public string? NumberPlate { get; set; }
+        public string? Speed { get; set; }
 
         public void StartToDrive()
         {
-            Speed = 10;
-            Console.WriteLine("Sakam braukšanu");
+            Speed = "20";
+            Console.WriteLine("Sākam braukšanu");
         }
 
-        public double GoFaster()
+        public string? GetSpeed()
         {
-            Speed += 10;
-            Console.WriteLine("Ātrums - " + Speed);
             return Speed;
+        }
+
+        public string GetSpeed(string speed) => speed;
+
+        public string GoFaster()
+        {
+            Speed += "10";
+            Console.WriteLine("Ātrums - " + Speed);
+            return speed;
         }
 
         public void Beep()
@@ -30,16 +39,16 @@ namespace Third
             Console.WriteLine("BEEP");
         }
 
-        public double SlowDown()
+        public string SlowDown()
         {
-            Speed -= 10;
+            Speed = "10";
             Console.WriteLine("Ātrums - " + Speed);
             return Speed;
         }
 
         public void Stop()
         {
-            Speed = 0;
+            Speed = "0";
             Console.WriteLine("Apstāšanās");
         }
 

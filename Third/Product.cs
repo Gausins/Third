@@ -8,11 +8,15 @@ namespace Third
 {
     public class Product
     {
+        public double h;
+        public double w;
+        public double m;
+
         public Product(double height, double width, double weight)
         {
-            Height = 20;
-            Width = 30;
-            Weight = 60;
+            Height = h;
+            Width = w;
+            Weight = m;
         }
         public double Height { get; }
         public double Width { get; }

@@ -18,5 +18,10 @@ namespace Third
         {
             return DateTime.Now.Year - BirthDate.Year;
         }
+
+        internal int GetAge(DateTime now)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
